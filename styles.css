@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #F3FAFB;
+  font-family: 'Open Sans', sans-serif;
+  color: #252F44;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+p { font-size: 0.9rem; }
+
+a { 
+  text-decoration: none; 
+  color: #306bf3;
+}
+
+
+/* ---------------------------------------------------- */
+
+#login {
+  display: grid;
+  grid-template-columns: 400px 400px;
+  justify-content: center;
+  padding: 1rem 2rem;
+  background: #fff;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+}
+
+.left { border-right: 1px #F3FAFB solid;}
+
+/* Login with Google */
+
+.google {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 80px 0 0 0;
+  padding: 0.5rem 1rem;
+  border: 1px solid #9FA5B5;
+  border-radius: 3px;
+}
+
+.google img {
+  height: 20px;
+  width: auto;
+  margin: auto 0.5rem;
+}
+
+.google a { 
+  color: #252F44;
+}
+
+/* or */
+
+.google + p {
+  margin-top: 1rem;
+  margin-left: 10rem;
+  color: #848C94;
+}
+
+
+
+label {
+  color: #252F44;
+  font-weight: bold;
+  display: block;
+  margin: 0.5rem 0;
+}
+
+input[type="Email"],
+input[type="Password"] {
+  width: 80%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #C0BAC2;
+  border-radius: 3px;
+}
+
+.forgot {
+  margin: 0.75rem 0 2rem 0;
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+
+}
+
+.remember input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+  border: 1px solid #C0BAC2;
+}
+
+.remember span {
+  margin-left: 0.25rem;
+}
+
+.forgot a { 
+  display: inline-block;
+  margin-left: 7rem;
+}
+
+input[type="submit"] {
+  width: 80%;
+  background: #252F44;
+  color: #fff;
+  padding: 0.5rem;
+  border: 1px solid #252F44;
+  border-radius: 5px;
+  /* margin-left: 2rem; */
+  margin-bottom: 3rem;
+}
+
+input[type="submit"] + p {
+  margin-left: 3rem;
+  margin-bottom: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* ----------------------------------------- */
+
+.right {
+  align-self: center;
+  justify-self: center;
+}
+
+.info {
+  display: flex;
+  margin: 3.5rem auto;
+}
+
+.info i {
+  color: #306bf3;
+  margin: 0 2rem;
+}
+
+.info h4 { margin-bottom: 0.25rem; }
+
+.forgot input[type="submit"] + p {
+  margin-left: 2rem;
+}
