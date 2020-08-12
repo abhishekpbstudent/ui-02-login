@@ -8,34 +8,39 @@
   <title>Login</title>
 </head>
 <body>
-  <section id="login">
-    <div class="left">
-      <div class="google">
+
+  <section id="login">  <!--beter ues a container div since this is not exactly a section-->
+    <div class="left">  <!--use a form tag here -->
+      <div class="google"> <!--This is a button so use button tag-- ALWAYS USE HTML SEMANTIC TAGS WHEN POSSIBLE  with a btn and btn-ghost class - notice how the login and google button are similar ? Take advantage of it-->
         <img src="images/google.png">
-        <h5> <a href="#">Log in with Google</a></h5>
+        <h5> <a href="#">Log in with Google</a></h5> <!--If button tag is used then no need of another element for this & DONT USE HEADING TAGS FOR MAKING THINGS BOLD-->
       </div>
-      <p>or</p>
+
+      <p>or</p> <!--use small tag here-->
+
       <label for="Email">Email</label>
       <input type="email" placeholder="Enter your email">
       <label for="Password">Password</label>
       <input type="password" placeholder="Password">
-      <div class="forgot">
+
+      <div class="forgot"> <!--checkbox-container would be a better name - think of names that a third person would understand intutively just by seeing the name and the website-->
        <div class="remember">
         <input type="checkbox">
         <span>Remember me</span>
        </div>
         <a href="#">Forgot password?</a>
       </div>
-      <input type="submit" value="Log in">
-      <p>Don't have an account? 
-      <a href="#">Sign up</a></account></p>
+      
+      <input type="submit" value="Log in"> <!--use button tag here-->
+      <p>Don't have an account?             <!--use small tag here-->
+      <a href="#">Sign up</a></account></p>  
    </div>
 
 <!-- ---------------------------------->
 
 
-   <div class="right">
-      <div class="info">
+   <div class="right"> <!--Bette name would be features-->
+      <div class="info"> <!--better name would be feature-->
         <i class="fas fa-database fa-2x"></i>
         <span>
           <h4>Development</h4>

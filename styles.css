@@ -29,7 +29,8 @@ a {
 
 #login {
   display: grid;
-  grid-template-columns: 400px 400px;
+  grid-template-columns: repeat(2, 1fr);  /*Using FLEX here seems to be a better choice - just one direction and two elements */
+  width: 800px;
   justify-content: center;
   padding: 1rem 2rem;
   background: #fff;
@@ -37,11 +38,11 @@ a {
   border-radius: 3px;
 }
 
-.left { border-right: 1px #F3FAFB solid;}
+.left { border-right: 1px #ecf2ff solid;} /*Travery used flex in colum direction here  - also it's better to set the padding and stuff here and setting ther button to 100%*/
 
 /* Login with Google */
 
-.google {
+.google {       /*this should be a button - MAKE TEXT INSIDE BOLD INSTEAS OF USING A HEADING TAG*/
   width: 80%;
   display: flex;
   justify-content: center;
@@ -95,6 +96,8 @@ input[type="Password"] {
 
 }
 
+.remember { display: flex; }
+
 .remember input[type="checkbox"] {
   width: 1rem;
   height: 1rem;
@@ -107,7 +110,7 @@ input[type="Password"] {
 
 .forgot a { 
   display: inline-block;
-  margin-left: 7rem;
+  margin-left: 5.7rem;
 }
 
 input[type="submit"] {
@@ -119,6 +122,7 @@ input[type="submit"] {
   border-radius: 5px;
   /* margin-left: 2rem; */
   margin-bottom: 3rem;
+  cursor: pointer;
 }
 
 input[type="submit"] + p {
@@ -156,6 +160,22 @@ input[type="submit"] + p {
 
 .info h4 { margin-bottom: 0.25rem; }
 
-.forgot input[type="submit"] + p {
+/* .forgot input[type="submit"] + p {
   margin-left: 2rem;
+} */
+
+@media(max-width: 768px) {
+  #login { 
+    grid-template-columns: 1fr;
+  }
+  .forgot a { 
+    display: inline-block;
+    margin-left: 13.5rem;
+  }
+  .input[type="submit"] + p {
+    margin-left: 5rem;
+    margin-bottom: 1rem;
+  }
+  
+
 }
